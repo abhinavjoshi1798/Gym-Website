@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinav Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Beastly&family=Supermercado+One&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /*CSS Reset */
+    body,
+    html {
+        min-height: 100%;
+    }
+
+    body {
+        font-family: 'Rubik Beastly', cursive;
+        font-family: 'Supermercado One', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('Images/bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .left {
+        width: 286px;
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 34px;
+        top: 22px;
+
+    }
+
+    .left img {
+        padding: 2px 21px;
+        width: 136px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 26px;
+        text-align: left;
+    }
+
+    .mid {
+        /* border: 2px solid green; */
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+    }
+
+    .right {
+        /* border: 2px solid yellow; */
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 20px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        font-size: 17px;
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 35px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .header .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .btn {
+        background-color: black;
+        color: white;
+        margin: 0px 2px;
+        padding: 12px 18px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: 'Rubik Beastly', cursive;
+        font-family: 'Supermercado One', cursive;
+    }
+
+    .btn:hover {
+        background-color: rgb(31, 30, 30);
+    }
+
+    .container {
+        border: 2px solid white;
+        padding: 25px 103px;
+        width: 50%;
+        border-radius: 35px;
+        margin: 102px 125px
+    }
+
+    .form-group input {
+        /* width is set and margin is auto these two properties are necessary to align the element in center using margin auto */
+        text-align: center;
+        display: block;
+        width: 500px;
+        padding: 6px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+        font-family: 'Rubik Beastly', cursive;
+        font-family: 'Supermercado One', cursive;
+
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container .btn{
+        display: block;
+        width: 77%;
+        margin: 0px 77px;
+    }
+</style>
+
+<body>
+    <header class="header ">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="Images/logo.jpg" alt="Enter your name">
+            <div>Abhinav Fitness</div>
+        </div>
+
+
+
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class=active>Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym in kota now </h1>
+        <form actions="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Loaclity">
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email ID">
+
+            </div>
+            <Button class="btn" type="text" name="" placeholder="">SUBMIT</Button>
+        </form>
+    </div>
+</body>
+
+</html>
